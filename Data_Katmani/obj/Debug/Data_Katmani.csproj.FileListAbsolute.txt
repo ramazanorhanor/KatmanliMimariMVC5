@@ -1,0 +1,14 @@
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\Data_Katmani.dll.config
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\Data_Katmani.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\Data_Katmani.pdb
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\Domain_Katmani.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\EntityFramework.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\EntityFramework.SqlServer.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\Domain_Katmani.pdb
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\EntityFramework.xml
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\bin\Debug\EntityFramework.SqlServer.xml
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\obj\Debug\Data_Katmani.csproj.AssemblyReference.cache
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\obj\Debug\Data_Katmani.csproj.CoreCompileInputs.cache
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\obj\Debug\Data_Katmani.csproj.CopyComplete
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\obj\Debug\Data_Katmani.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Data_Katmani\obj\Debug\Data_Katmani.pdb

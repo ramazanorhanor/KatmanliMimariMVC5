@@ -1,0 +1,58 @@
+﻿@*@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "productForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="text" id="Name" name="Name" placeholder="Product Name" />
+        <input type="number" id="Price" name="Price" placeholder="Price" />
+        <button type="submit">Save</button>
+    }
+
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#productForm").submit(function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: '@Url.Action("Create", "Product")',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (res) {
+                    if (res.success) {
+                        alert(res.message);
+                    } else {
+                        alert("Error: " + res.message);
+                    }
+                }
+            });
+        });
+    </script>*@
+
+
+@model  Service_Katmani.DTOs.ProductDto
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { id = "productForm" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="text" id="Name" name="Name" placeholder="Product Name" />
+    <input type="number" id="Price" name="Price" placeholder="Price" />
+    <button type="submit">Save</button>
+}
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script>
+$("#productForm").submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+        url: '@Url.Action("Create", "Product")',
+        type: 'POST',
+        data: $(this).serialize(),
+        success: function (res) {
+            if (res.success) {
+                alert(res.message);
+                window.location.href = '@Url.Action("Index","Product")';
+            } else {
+                alert("Error: " + res.message);
+            }
+        }
+    });
+});
+</script>

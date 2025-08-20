@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Product CRUD";
+}
+
+<h2>Product CRUD</h2>
+
+<form id="productForm">
+    <input type="hidden" id="Id" />
+    <input type="text" id="Name" placeholder="Product Name" />
+    <input type="number" id="Price" placeholder="Price" />
+    <button type="submit">Save</button>
+</form>
+
+<ul id="productList"></ul>
+
+@section scripts{
+    <script>
+    async function loadProducts() {
+        const response = await fetch('@Url.Action("GetAllProducts")');
+        const products = await response.json();
+        const list = document.getElementById('productList');
+        list.innerHTML = '';
+        products.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = `${p.Name} - ${p.Price}`;
+            list.appendChild(li);
+        });
+    }
+
+    document.getElementById('productForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        const dto = {
+            Id: document.getElementById('Id').value,
+            Name: document.getElementById('Name').value,
+            Price: parseFloat(document.getElementById('Price').value)
+        };
+
+        await fetch('@Url.Action("Create")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': token
+            },
+            body: JSON.stringify(dto)
+        });
+
+        await loadProducts();
+    });
+
+    // Page load
+    loadProducts();
+    </script>
+}

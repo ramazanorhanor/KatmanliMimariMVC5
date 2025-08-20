@@ -1,0 +1,5 @@
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Domain_Katmani\bin\Debug\Domain_Katmani.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Domain_Katmani\bin\Debug\Domain_Katmani.pdb
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Domain_Katmani\obj\Debug\Domain_Katmani.csproj.CoreCompileInputs.cache
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Domain_Katmani\obj\Debug\Domain_Katmani.dll
+D:\YapayZekaTekrar\KatmanliMimariMVC5\Domain_Katmani\obj\Debug\Domain_Katmani.pdb
